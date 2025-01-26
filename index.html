@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Weather</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-container">
+        <header class="weather-header">
+          <h1>Weather Forecast</h1>
+          <div class="search-bar">
+            <input type="text" placeholder="Search for a city..." id="cityInput">
+            <button id="searchButton">Search</button>
+          </div>
+        </header>
+        <main class="weather-main">
+            <section class="current-weather">
+              <div class="temp-icon">
+                <img src="https://via.placeholder.com/100" alt="Weather Icon" id="weatherIcon">
+                <h2 id="temperature">.°C</h2>
+              </div>
+              <h3 id="cityName"></h3>
+              <p id="description"></p>
+            </section>
+            <section class="additional-info">
+              <div class="info-card">
+                <h4>Humidity</h4>
+                <p id="humidity">60%</p>
+              </div>
+              <div class="info-card">
+                <h4>Wind Speed</h4>
+                <p id="windSpeed">15 km/h</p>
+              </div>
+              <div class="info-card">
+                <h4>Pressure</h4>
+                <p id="pressure">1013 hPa</p>
+              </div>
+            </section>
+          </main>
+    <script src="weather.js"></script>
+</body>
+</html>
