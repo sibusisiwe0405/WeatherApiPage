@@ -104,7 +104,7 @@ body {
       width: 80%;
     }
   }
-  /* Base background styles */
+  
 .weather-container {
     position: relative;
     overflow: hidden;
@@ -113,7 +113,7 @@ body {
     transition: background 0.5s ease-in-out;
   }
   
-  /* Rain effect */
+  
   .rain {
     position: absolute;
     top: 0;
