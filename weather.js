@@ -8,7 +8,7 @@ async function getWeatherInfo() {
     }
 
     try {
-        const response = await axios.get(`http://api.weatherapi.com/v1/current.json?key=4fe3735326aa4f2ea9c73540241907&q=${cityName}`);
+        const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4fe3735326aa4f2ea9c73540241907&q=${cityName}`);
         const currentWeather = response.data.current;
         const location = response.data.location;
 
